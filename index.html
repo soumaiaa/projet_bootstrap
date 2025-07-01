@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Arvo">
     <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -21,30 +21,57 @@
   </head>
 
   <body>
-    <nav class="navbar bg-dark navbar-dark navbar-expand-lg border-bottom border-body" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
       <div class="container-fluid">
-        <img class=" logo " src="./images/top-logo.png" >
-        <button class="navbar-toggler  btn btn-white border " type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand fw-bold" href="#">ONEMILLION<span class="text-muted">LINES_</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse navigation " id="navbarText">
-          <ul class="navbar-nav me-2 mb-lg-2 list-unstyled">
-            <li class="nav-item">
-               <a class="nav-link text-white mx-4" aria-current="page"  href="#">WHO WE ARE</a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" href="#">WHO WE ARE</a>
             </li>
-            <li class="nav-item">
-               <a class="nav-link text-white mx-4" aria-current="page"  href="#">GET INVOLVET</a>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">GET INVOLVED</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-     
+    
+    
     <div class="text-center bg-image text-white " style="background-image: url(./images/hero-image.jpg)">
       <h1 class="pt-4">Our goal is to inspire <br> Tallahassee to write 1,000,000 <br> lines of code </h1>
       <p class="p-4">Al over the country poeple are taking the <strong>HOUR OF CODE</strong> chelenge issued by <strong>CODE.org</strong> Milons of code <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint asperiores molestiae eaque, hic quos optio <br>Lorem ipsum dolor sit amet</p>
-      <a href="../screenshot-modal.png" > <button class="bg-danger text-white rounded border-0  bout">Learn more>></button></a> <br>
-      <img class="p-4" src="./images/code.png">
+           <!-- Bouton pour ouvrir la modale -->
+<div class="text-center mt-4">
+  <button type="button"
+          class="btn btn-danger btn-lg px-5 py-2"
+          data-bs-toggle="modal"
+          data-bs-target="#learnMoreModal">
+    Learn more »
+  </button>
+</div>
+
+  
+      <!-- Modal -->
+          <!-- Modal -->
+     <!-- MODAL Learn More -->
+<div class="modal fade" id="learnMoreModal" tabindex="-1" aria-labelledby="learnMoreModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content bg-dark">
+      <div class="modal-header border-0">
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 text-center">
+        <img src="./screenshot-modal.png" alt="Screenshot" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+      <img class="p-4" src="images/code.png">
     </div><!-- /#home -->
 
     <div class="text-center bg-white pt-4 pb-4">
@@ -59,32 +86,38 @@
      
     </div><!-- /#who -->
 
-  <div class="get-involved text-center pb-4 bg-body-tertiary">
-       <h1 class="pt-4 text-danger text-uppercase">GET INVOLVED</h1>
-       <div class="d-flex justify-content-center">
-        <HR class="text-danger">
+    <div class="container text-center py-5 bg-light">
+      <h2 class="text-danger text-uppercase mb-4">Get Involved</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="rounded-circle bg-dark text-white d-inline-flex justify-content-center align-items-center" style="width: 80px; height: 80px;">
+            <i class="fa fa-user fa-2x"></i>
+          </div>
+          <h4 class="text-danger mt-3">STUDENTS</h4>
+          <p>Want to learn how to code? Click the button and we’ll let you know how to get involved.</p>
+          <button class="btn btn-outline-danger btn-sm">Start Learning »</button>
         </div>
-    <div class="row gs-0 d-flex justify-content-center   pb-4 pt-4">
-       <div class="col-12 col-md-3 p-2">
-        <svg class=" w-25 "xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M399 384.2C376.9 345.8 335.4 320 288 320H224c-47.4 0-88.9 25.8-111 64.2c35.2 39.2 86.2 63.8 143 63.8s107.8-24.7 143-63.8zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256zm256 16a72 72 0 1 0 0-144 72 72 0 1 0 0 144z"/></svg>
-         <h1 class="text-danger text-uppercase">STUSENTS</h1>
-         <P>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Officia, alias?</p>
-         <button class="text-danger border  bg-white ">Start Learning>></button>
-       </div>
-       <div class="col-12 col-md-3 p-2">
-        <svg class="w-25 "xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
-         <h1 class="text-danger text-uppercase">EDUCATORS</h1>
-         <P>>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Officia, alias?</P>
-         <button class="text-danger border  bg-white">Join The Initiative>></button>
-      </div>
-      <div class="col-12 col-md-3 p-2">
-        <svg class="w-25 "xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
-         <h1 class="text-danger text-uppercase">SPONSORS</h1>
-         <P>>Lorem ipsum dolor sit amet consectetur<br> adipisicing elit. Officia, alias?</P>
-         <button class="text-danger border bg-white">Give Support>></button>
-      </div>
     
+        <div class="col-md-4 mb-4">
+          <div class="rounded-circle bg-dark text-white d-inline-flex justify-content-center align-items-center" style="width: 80px; height: 80px;">
+            <i class="fa fa-pencil fa-2x"></i>
+          </div>
+          <h4 class="text-danger mt-3">EDUCATORS</h4>
+          <p>Want to bring this initiative to your school or institution? Awesome!</p>
+          <button class="btn btn-outline-danger btn-sm">Join The Initiative »</button>
+        </div>
+    
+        <div class="col-md-4 mb-4">
+          <div class="rounded-circle bg-dark text-white d-inline-flex justify-content-center align-items-center" style="width: 80px; height: 80px;">
+            <i class="fa fa-handshake-o fa-2x"></i>
+          </div>
+          <h4 class="text-danger mt-3">SPONSORS</h4>
+          <p>We love all the support we get to help host events. Click to get involved.</p>
+          <button class="btn btn-outline-danger btn-sm">Give Support »</button>
+        </div>
+      </div>
     </div>
+    
      
   </div><!-- /#get-involved -->
 
@@ -105,6 +138,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
